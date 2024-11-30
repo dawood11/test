@@ -1,0 +1,142 @@
+.popupOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 45vh;
+  height: 50vh;
+  max-width: 90%;
+}
+
+.popupContainer {
+  width: 25vh;
+}
+
+.saveButton,
+.cancelButton {
+  margin-top: 10px;
+}
+
+label {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  resize: none;
+}
+
+.buttonGroup {
+  display: flex;
+}
+
+.saveButton,
+.cancelButton {
+  margin-top: 15px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.saveButton {
+  background-color: #4caf4fef;
+  color: white;
+}
+
+.saveButton:hover {
+  background-color: #45a049;
+}
+
+.cancelButton {
+  background-color: #e53935;
+  color: white;
+  margin-left: 10px;
+}
+
+.cancelButton:hover {
+  background-color: #f44336ec;
+}
+
+/* Optional animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Dark Mode Overrides */
+:global(body.dark-mode) .popup {
+  background: #434654;
+  color: #ffffff;
+}
+
+:global(body.dark-mode) .popupOverlay {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+:global(body.dark-mode) label {
+  color: #e0e0e0;
+}
+
+:global(body.dark-mode) input[type="text"],
+:global(body.dark-mode) input[type="number"],
+:global(body.dark-mode) select,
+:global(body.dark-mode) textarea {
+  background-color: #565869;
+  color: #ffffff;
+  border: 1px solid #434654;
+}
+
+:global(body.dark-mode) .saveButton {
+  color: #ffffff;
+  background-color: #4caf4fc0;
+}
+
+:global(body.dark-mode) .saveButton:hover {
+  color: #ffffff;
+  background-color: #45a049;
+}
+
+:global(body.dark-mode) .cancelButton {
+  color: #ffffff;
+  background-color: #f44336ae;
+}
+
+:global(body.dark-mode) .cancelButton:hover {
+  color: #ffffff;
+  background-color: #e53935;
+}

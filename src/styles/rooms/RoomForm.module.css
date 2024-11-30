@@ -1,0 +1,89 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  height: 45em;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 600px) {
+  .form {
+    height: 55vh;
+    margin-top: 1em;
+  }
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input:focus,
+.textarea:focus {
+  outline: none;
+}
+
+.input,
+.textarea {
+  height: 4.5em;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #ffffff;
+  color: #000000;
+  margin-bottom: 1rem;
+}
+
+.textarea {
+  height: 8rem;
+  resize: none;
+}
+
+.button {
+  padding: 0.75rem;
+  background-color: #2678b0;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* Dark Mode Overrides */
+:global(body.dark-mode) .form {
+  background-color: #434654;
+  border: 1px solid #565869;
+  color: #ffffff;
+}
+
+:global(body.dark-mode) .input,
+:global(body.dark-mode) .textarea {
+  background-color: #565869;
+  color: #ffffff;
+  border: 1px solid #434654;
+}
+
+:global(body.dark-mode) .input::placeholder,
+:global(body.dark-mode) .textarea::placeholder {
+  color: #ffffff;
+}
+
+:global(body.dark-mode) .button {
+  background-color: #2678b0;
+}
+
+:global(body.dark-mode) .button:hover {
+  background-color: #3498db;
+}

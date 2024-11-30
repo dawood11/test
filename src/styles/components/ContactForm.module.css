@@ -1,0 +1,144 @@
+.page-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+
+
+/* Dark Mode Overrides */
+:global(body.dark-mode) .page-container {
+  background-color: #2c2f36;
+}
+
+.ContactContainer {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 10rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Dark Mode Overrides */
+:global(body.dark-mode) .ContactContainer {
+  background-color: #434654;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.details {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Dark Mode Overrides */
+:global(body.dark-mode) .details {
+  color: #dddddd;
+}
+
+label {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+/* Dark Mode Overrides */
+:global(body.dark-mode) label {
+  color: #f0f0f0;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+textarea::placeholder {
+  color: #000000;
+}
+
+:global(body.dark-mode) input[type="text"]::placeholder,
+:global(body.dark-mode) input[type="email"]::placeholder,
+:global(body.dark-mode) textarea::placeholder {
+  color: #ffffff;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Dark Mode Overrides */
+:global(body.dark-mode) input[type="text"],
+:global(body.dark-mode) input[type="email"],
+:global(body.dark-mode) textarea {
+  background-color: #565869;
+  color: #ffffff;
+  border: 1px solid #434654;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #0066cc;
+  outline: none;
+}
+
+/* Dark Mode Overrides for Focus */
+:global(body.dark-mode) input[type="text"]:focus,
+:global(body.dark-mode) input[type="email"]:focus,
+:global(body.dark-mode) textarea:focus {
+  border-color: #3498db;
+}
+
+.button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #0066cc;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #004999;
+}
+
+/* Dark Mode Button Overrides */
+:global(body.dark-mode) .button {
+  background-color: #3498db;
+}
+
+:global(body.dark-mode) .button:hover {
+  background-color: #2678b0;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Dark Mode Overrides */
+:global(body.dark-mode) h1 {
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 550px) {
+  .ContactContainer {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+}
