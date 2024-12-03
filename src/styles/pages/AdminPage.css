@@ -1,0 +1,14 @@
+.button-spacing {
+  margin: 10px;
+}
+
+.button-admin {
+  margin: 10px;
+  background-color: #c5d3e8;
+}
+
+.list-item {
+  list-style-type: none;
+  text-align: left;
+  padding-left: 40px;
+}

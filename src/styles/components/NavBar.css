@@ -1,0 +1,75 @@
+/* General Navbar Styling */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #c5d3e8;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  font-size: 20px;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: light;
+  justify-content: space-between;
+  padding-right: 1rem;
+  color: #142a4d;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #142a4d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar-links a.active {
+  font-weight: bold;
+  color: #142a4d;
+}
+
+.logout-button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #142a4d;
+  color: #ddd;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar-links a {
+    text-align: left;
+    width: 100%;
+  }
+}
